@@ -24,7 +24,7 @@ If you are using our legacy configuration and definition files, refer [this docu
     ```yaml
 integrations:
     - name: nri-mssql
-    env:
+      env:
         HOSTNAME: localhost
         PORT: 1433
         USERNAME: USERNAME
@@ -39,10 +39,10 @@ integrations:
         QUERY_MONITORING_COUNT_THRESHOLD: 20
         # Interval in seconds for fetching grouped slow queries; Should always be same as mysql-config interval.
         QUERY_MONITORING_FETCH_INTERVAL: 15
-    interval: 15s
-    labels:
+      interval: 15s
+      labels:
         environment: production
-    inventory_source: config/mssql
+      inventory_source: config/mssql
     ```
     </Collapser>
 
@@ -55,7 +55,7 @@ integrations:
     ```yaml
 integrations:
     - name: nri-mssql
-    env:
+      env:
         HOSTNAME: localhost
         PORT: 1433
         USERNAME: USERNAME
@@ -70,10 +70,10 @@ integrations:
         QUERY_MONITORING_COUNT_THRESHOLD: 20
         # Interval in seconds for fetching grouped slow queries; Should always be same as mysql-config interval.
         QUERY_MONITORING_FETCH_INTERVAL: 15
-    interval: 15s
-    labels:
+      interval: 15s
+      labels:
         environment: production
-    inventory_source: config/mssql
+      inventory_source: config/mssql
     ```
     </Collapser>
 
